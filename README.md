@@ -9,7 +9,7 @@
 
 All outputs are organized into **separate folders** in the same directory as the input Excel file.
 
-Kindly note that this is a beta version. The utility is undergoing further tests for troubleshoot issues. 
+Kindly note that this is a beta version. The utility is undergoing further tests for troubleshoot issues. The final version of the source code would be uploaded soon.
 
 ---
 
@@ -24,13 +24,15 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 
 Clone the repository and install:
 
+### Install via pip locally
+pip install pandas numpy matplotlib seaborn openpyxl scipy
+
+
 ```bash
 git clone https://github.com/sharath291994/zacros-ce-fit.git
 cd zacros-ce-fit
 pip install .
 
-### Install via pip locally
-pip install pandas numpy matplotlib seaborn openpyxl scipy
 
 Usage
 
@@ -77,6 +79,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 License
 
 This project is licensed under the MIT License.
+
 
 
 
