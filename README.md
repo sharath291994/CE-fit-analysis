@@ -9,7 +9,7 @@
 
 All outputs are organized into **separate folders** in the same directory as the input Excel file.
 
-Kindly note that this is a beta version. The utility is undergoing further tests and the final version would be uploaded soon.
+Kindly note that this is a beta version. The utility is undergoing further tests and the final version will be uploaded soon.
 
 ---
 
@@ -73,6 +73,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 ### License
 
 This project is licensed under the MIT License.
+
 
 
 
