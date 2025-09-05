@@ -30,11 +30,10 @@ An Excel file with count, mean, median, mode, std, variance, min, max, quantiles
 - Python >= 3.8
 - pip
 
-### Install via pip locally
+### Installation procedure
 
 Clone the repository and install:
-git clone https://github.com/sharath291994/zacros_ce_fit.git
-cd zacros_ce_fit
+git clone https://github.com/sharath291994/Zacros_CE_fit.git
 pip install .
 
 ### Install via pip locally
@@ -73,6 +72,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 ### License
 
 This project is licensed under the MIT License.
+
 
 
 
