@@ -19,7 +19,7 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 ![Correlation Example](examples/correlation_pearson.png)
 
 ### Frequency Distribution
-![Histogram Example](examples/CE Figure 8_frequency.png)
+![Histogram Example](examples/frequency_plot.png)
 Statistical Summary (Excel)
 
 ## Installation
@@ -71,6 +71,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 ### License
 
 This project is licensed under the MIT License.
+
 
 
 
