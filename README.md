@@ -15,13 +15,12 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 
 ### The following plots are generated using the Zacros CE fit utility ###### 
 
-Correlation Heatmap (Pearson)
+### Correlation Matrix
+![Correlation Example](examples/correlation_pearson.png)
 
-Frequency Distribution Histogram
-
-
+### Frequency Distribution
+![Histogram Example](examples/CE Figure 8_frequency.png)
 Statistical Summary (Excel)
-An Excel file with count, mean, median, mode, std, variance, min, max, quantiles, skewness, and kurtosis for each numeric column.
 
 ## Installation
 
@@ -72,6 +71,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 ### License
 
 This project is licensed under the MIT License.
+
 
 
 
