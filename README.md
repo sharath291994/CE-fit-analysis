@@ -29,7 +29,7 @@ git clone https://github.com/sharath291994/zacros-ce-fit.git
 cd zacros-ce-fit
 pip install .
 
-Install dependencies manually (if needed)
+### Install dependencies manually (if needed)
 pip install pandas numpy matplotlib seaborn openpyxl scipy
 
 Usage
@@ -77,5 +77,6 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 License
 
 This project is licensed under the MIT License.
+
 
 
