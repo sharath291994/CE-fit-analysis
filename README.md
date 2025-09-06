@@ -28,7 +28,7 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 - **[Scipy](https://scipy.org/)**
 
 ### Installation
-Please follow the steps below to install the Zacros CE utility in your Windows machine:
+Please follow the steps below to install the Zacros CE utility on your Windows machine:
 1) Download the source code from the Zacros_CE_fit repository and store it in a folder. 
 2) In the Windows Command Prompt, change the path to the location of the source code (where pyproject.toml file is available).
 3) Run the following command: pip install . 
@@ -57,6 +57,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
