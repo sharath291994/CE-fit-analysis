@@ -31,7 +31,7 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 Please follow the steps below to install the Zacros CE utility in your Windows machine:
 1) Download the source code from the Zacros_CE_fit repository and store it in a folder. 
 2) In the Windows Command Prompt, change the path to the location where the source code is stored (where pyproject.toml file is available).
-3) Run the following command: pip install.
+3) Run the following command: pip install .
 
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
@@ -57,6 +57,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
