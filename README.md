@@ -38,9 +38,9 @@ Please follow the steps below to generate the results using the Zacros CE utilit
 
 ### Options
 The following options are available in the utility: 
---correlation : Generate correlation matrices and heatmaps.
---histograms : Generate frequency distribution histograms.
---stats : Generate statistical summary in Excel format.
+1) --correlation : Generate correlation matrices and heatmaps.
+2) --histograms : Generate frequency distribution histograms.
+3) --stats : Generate statistical summary in Excel format.
 
 ### Output
 Running the utility creates the following folders in the the directory where your AmatBvec.xlsx file is stored:
@@ -53,6 +53,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
