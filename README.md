@@ -1,7 +1,7 @@
 
 ## Overview
 
-**Zacros CE Fit** is a Python utility for performing **cluster expansion fitting analysis** on AmcBvec file of Zacros CE fit utility. The following statisitcal information is provided by the utility: 
+**Zacros CE Fit** is a Python utility for performing **cluster expansion fitting analysis** on AmatBvec file of Zacros CE fit utility. The following statisitcal information is provided by the utility: 
 
 - **Correlation Analysis:** Computes Pearson, Kendall, and Spearman correlation matrices with heatmaps.  
 - **Frequency Distributions:** Plots histograms of numeric data for quick exploratory analysis.  
@@ -71,6 +71,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 ### License
 
 This project is licensed under the MIT License.
+
 
 
 
