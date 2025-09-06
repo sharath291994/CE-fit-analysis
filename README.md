@@ -20,7 +20,6 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 
 ### Frequency Distribution
 ![Histogram Example](examples/frequency_plot.png)
-Statistical Summary (Excel)
 
 ### Prerequisites
 - Python >= 3.8
@@ -58,6 +57,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
