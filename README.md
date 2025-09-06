@@ -34,13 +34,6 @@ git clone https://github.com/sharath291994/Zacros_CE_fit.git
 cd Zacros_CE_fit
 pip install .
 ```
-### Installation (Alternative)
-Please follow the steps below to install the Zacros CE utility on your Windows machine:
-1) Download the source code from the Zacros_CE_fit repository and store it in a folder. 
-2) In the Windows Command Prompt, change the path to the location of the source code (where pyproject.toml file is available).
-3) ```bash
-   pip install .
-   ```
 
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
@@ -66,6 +59,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
