@@ -1,4 +1,3 @@
-# zacros_ce_fit/cli.py
 import argparse
 from .analysis import run_analysis
 
@@ -25,4 +24,5 @@ def main():
     )
 
 if __name__ == "__main__":
+
     main()
