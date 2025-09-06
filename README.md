@@ -26,7 +26,8 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 - pip
 
 ### Installation
-
+- **[Pandas](https://pandas.pydata.org/)**
+- **[Scipy](https://scipy.org/)**
 
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
@@ -52,6 +53,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
