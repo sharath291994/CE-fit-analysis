@@ -32,7 +32,7 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 Please follow the steps below to generate the results using the Zacros CE utility: 
 1) Place your AmatBvec.xlsx file in a directory.
 2) In the Windows Command Prompt, change the path to the location of AmatBvec.xlsx file. 
-3) Run the following command: zacros-ce-fit AmatBvec.xlsx --correlation --histograms --stats
+3) Run the following command: zacros_ce_fit AmatBvec.xlsx --correlation --histograms --stats
 4) Alternatively, you can run the following command: python -m zacros_ce_fit.cli AmcBvec.xlsx --correlation --histograms --stats
 
 ### Options
@@ -52,6 +52,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
