@@ -35,10 +35,11 @@ pip install .
 pip install pandas numpy matplotlib seaborn openpyxl scipy
 
 ### Usage
-Please follow the following steps to generate the results using the Zacros CE utility: 
-1) Place your Zacros CE utility  AmatBvec in a directory.
-2) In the Windows command window, run the command: zacros-ce-fit path/to/AmatBvec.xlsx --correlation --histograms --stats
-3) Alternatively, you can run the following command: python -m zacros_ce_fit.cli path/to/AmcBvec.xlsx --correlation --histograms --stats
+Please follow the steps below to generate the results using the Zacros CE utility: 
+1) Place your AmatBvec.xlsx file in a directory.
+2) In the Windows Command Prompt, change the path to the location of AmatBvec.xlsx file. 
+3) Run the following command: zacros-ce-fit AmatBvec.xlsx --correlation --histograms --stats
+4) Alternatively, you can run the following command: python -m zacros_ce_fit.cli AmcBvec.xlsx --correlation --histograms --stats
 
 ### Options
 The following options are available in the utility: 
@@ -48,15 +49,16 @@ The following options are available in the utility:
 
 ### Output
 Running the utility creates the following folders in the the directory where your AmatBvec.xlsx file is stored:
-correlation_matrices/ – contains Excel files and heatmap images of correlation matrices.
-frequency_distributions/ – contains histogram images for each numeric column.
-statistical_summary/ – contains statistical_summary.xlsx with descriptive statistics.
+1) correlation_matrices: It coontains Excel files and heatmap images of correlation matrices.
+2) frequency_distributions: It contains histogram images for each numeric column.
+3) statistical_summary: It ontains statistical_summary.xlsx with descriptive statistics.
 
 ### Contributing
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
