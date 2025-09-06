@@ -28,7 +28,7 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 - **[Scipy](https://scipy.org/)**
 
 ### Installation
-As shown below, use the Windows Command Prompt to clone the repository into your local machine, and install Zacros_CE_fit utility using pip
+As shown below, use the Windows Command Prompt (cmd.exe) to clone the repository into a directory in your local machine, and install Zacros_CE_fit utility using pip.
 ```bash
 git clone https://github.com/sharath291994/Zacros_CE_fit.git
 cd Zacros_CE_fit
@@ -38,9 +38,11 @@ pip install .
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
 1) Place your Amat_Bvec.xlsx file in a directory.
-2) In the Windows command prompt, change the path to the location of Amat_Bvec.xlsx file. 
-3) Run the following command: zacros_ce_fit Amat_Bvec.xlsx --correlation --histograms --stats 
-4) Alternatively, you can run the following command: python -m zacros_ce_fit.cli Amat_Bvec.xlsx --correlation --histograms --stats 
+2) In the Windows Command Prompt, change the path to the location of Amat_Bvec.xlsx file. 
+3) Run the following command:
+```bash
+python -m zacros_ce_fit.cli Amat_Bvec.xlsx --correlation --histograms --stats 
+```
 
 ### Options
 The following options are available in the utility: 
@@ -54,7 +56,7 @@ Running the utility creates the following folders in the the directory where you
 2) frequency_distributions: It contains histogram images for each numeric column.
 3) statistical_summary: It provides statistical information about each of the CE figure/parameter. 
 
-The following message will appear in the Windows command prompt after the folders are created: 
+The following message will appear in the Windows Command Prompt after the folders are created: 
 ```bash
 Analysis complete. Results saved in subfolders of: path\ZACROS_CE_File
 ```
@@ -64,6 +66,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
