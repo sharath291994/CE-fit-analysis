@@ -15,10 +15,10 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 
 ### The following plots are generated using the Zacros CE fit utility ###### 
 
-### Correlation Matrix
+### Correlation Matrix (example)
 ![Correlation Example](examples/correlation_pearson.png)
 
-### Frequency Distribution
+### Frequency Distribution (example)
 ![Histogram Example](examples/frequency_plot.png)
 
 ### Prerequisites
@@ -52,6 +52,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
