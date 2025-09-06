@@ -31,14 +31,14 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 Please follow the steps below to install the Zacros CE utility in your Windows machine:
 1) Download the source code from the Zacros_CE_fit repository and store it in a folder. 
 2) In the Windows Command Prompt, change the path to the location where the source code is stored (where pyproject.toml file is available).
-3) Run the following command: pip install .
+3) Run the following command: "pip install .". 
 
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
 1) Place your AmatBvec.xlsx file in a directory.
 2) In the Windows Command Prompt, change the path to the location of AmatBvec.xlsx file. 
-3) Run the following command: zacros_ce_fit AmatBvec.xlsx --correlation --histograms --stats
-4) Alternatively, you can run the following command: python -m zacros_ce_fit.cli AmatBvec.xlsx --correlation --histograms --stats 
+3) Run the following command: "zacros_ce_fit AmatBvec.xlsx --correlation --histograms --stats".
+4) Alternatively, you can run the following command: "python -m zacros_ce_fit.cli AmatBvec.xlsx --correlation --histograms --stats". 
 
 ### Options
 The following options are available in the utility: 
@@ -57,6 +57,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
