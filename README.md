@@ -22,15 +22,11 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 ![Histogram Example](examples/frequency_plot.png)
 Statistical Summary (Excel)
 
-## Installation
-
 ### Prerequisites
-
 - Python >= 3.8
 - pip
 
 ### Installation procedure
-
 Clone the repository and install:
 git clone https://github.com/sharath291994/Zacros_CE_fit.git
 pip install .
@@ -39,38 +35,29 @@ pip install .
 pip install pandas numpy matplotlib seaborn openpyxl scipy
 
 ### Usage
-
-Place your Zacros CE utility  AmcBvec in a directory, then run:
-
-zacros-ce-fit path/to/AmcBvec.xlsx --correlation --histograms --stats
-
-python -m zacros_ce_fit.cli path/to/AmcBvec.xlsx --correlation --histograms --stats
+Please follow the following steps to generate the results using the Zacros CE utility: 
+1) Place your Zacros CE utility  AmatBvec in a directory.
+2) In the Windows command window, run the command: zacros-ce-fit path/to/AmatBvec.xlsx --correlation --histograms --stats
+3) Alternatively, you can run the following command: python -m zacros_ce_fit.cli path/to/AmcBvec.xlsx --correlation --histograms --stats
 
 ### Options
-
+The following options are available in the utility: 
 --correlation : Generate correlation matrices and heatmaps.
-
 --histograms : Generate frequency distribution histograms.
-
 --stats : Generate statistical summary in Excel format.
 
 ### Output
-
-Running the utility creates the following folders in the same directory as your Excel file:
-
+Running the utility creates the following folders in the the directory where your AmatBvec.xlsx file is stored:
 correlation_matrices/ – contains Excel files and heatmap images of correlation matrices.
-
 frequency_distributions/ – contains histogram images for each numeric column.
-
 statistical_summary/ – contains statistical_summary.xlsx with descriptive statistics.
 
 ### Contributing
-
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
 ### License
-
 This project is licensed under the MIT License.
+
 
 
 
