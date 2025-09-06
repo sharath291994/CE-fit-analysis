@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Sep  5 19:48:16 2025
-
-@author: saish
-"""
 
 import os
 import pandas as pd
@@ -134,3 +128,4 @@ def run_analysis(file_path, n_cols=None, corr_methods=["pearson", "kendall", "sp
         statistical_summary(df, stats_dir)
     
     print("Analysis complete. Results saved in subfolders of:", base_dir)
+
