@@ -28,19 +28,20 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 - **[Scipy](https://scipy.org/)**
 
 ### Installation
+Use the Windows Command Prompt to clone the repository into your local machine and install Zacros_CE_fit utility using pip
+```bash
+git clone https://github.com/sharath291994/Zacros_CE_fit.git
+cd Zacros_CE_fit
+pip install .
+```
+### Installation (Alternative)
 Please follow the steps below to install the Zacros CE utility on your Windows machine:
 1) Download the source code from the Zacros_CE_fit repository and store it in a folder. 
 2) In the Windows Command Prompt, change the path to the location of the source code (where pyproject.toml file is available).
-3) Run the following command: pip install . 
+3) ```bash
+   pip install .
+   ```
 
-
-### Installing from Source
-To install the latest development version from GitHub:
-```bash
-git clone .git
-cd 
-pip install .
-```
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
 1) Place your Amat_Bvec.xlsx file in a directory.
@@ -65,6 +66,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
