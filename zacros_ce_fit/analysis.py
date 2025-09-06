@@ -64,7 +64,7 @@ def frequency_distributions(df, output_dir):
     numeric_cols = df.select_dtypes(include=np.number).columns
     for col in numeric_cols:
         plt.figure(figsize=(8, 5))
-        sns.histplot(df[col], bins=20, kde=True, color="skyblue")
+        sns.histplot(df[col], bins=20, kde=True, color="blue")
         plt.title(f"Frequency Distribution of {col}")
         plt.xlabel(col)
         plt.ylabel("Frequency")
@@ -128,4 +128,5 @@ def run_analysis(file_path, n_cols=None, corr_methods=["pearson", "kendall", "sp
         statistical_summary(df, stats_dir)
     
     print("Analysis complete. Results saved in subfolders of:", base_dir)
+
 
