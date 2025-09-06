@@ -1,7 +1,7 @@
 
 ## Overview
 
-**Zacros CE Fit** is a utility for performing **statistical analysis** on AmatBvec file obtained using cluster expansion fitting exercise. The following statistical information can be obtained using the utility: 
+**Zacros CE Fit** is a utility for performing **statistical analysis** on Amat_Bvec file obtained using cluster expansion fitting exercise. The following statistical information can be obtained using the utility: 
 
 - **Correlation Analysis:** Computes Pearson, Kendall, and Spearman correlation matrices with heatmaps.  
 - **Frequency Distributions:** Plots histograms of numeric data for quick exploratory analysis.  
@@ -35,10 +35,10 @@ Please follow the steps below to install the Zacros CE utility on your Windows m
 
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
-1) Place your AmatBvec.xlsx file in a directory.
+1) Place your Amat_Bvec.xlsx file in a directory.
 2) In the Windows Command Prompt, change the path to the location of Amat_Bvec.xlsx file. 
 3) Run the following command: zacros_ce_fit Amat_Bvec.xlsx --correlation --histograms --stats 
-4) Alternatively, you can run the following command: python -m zacros_ce_fit.cli AmatBvec.xlsx --correlation --histograms --stats 
+4) Alternatively, you can run the following command: python -m zacros_ce_fit.cli Amat_Bvec.xlsx --correlation --histograms --stats 
 
 ### Options
 The following options are available in the utility: 
@@ -47,7 +47,7 @@ The following options are available in the utility:
 3) --stats : Generate statistical summary in Excel format.
 
 ### Output
-Running the utility creates the following folders in the the directory where your AmatBvec.xlsx file is stored:
+Running the utility creates the following folders in the the directory where your Amat_Bvec.xlsx file is stored:
 1) correlation_matrices: It contains heatmap images of correlation matrices and Excel files. 
 2) frequency_distributions: It contains histogram images for each numeric column.
 3) statistical_summary: It provides statistical information about each of the CE figure/parameter. 
@@ -57,6 +57,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
