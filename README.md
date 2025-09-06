@@ -38,7 +38,7 @@ pip install .
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
 1) Place your Amat_Bvec.xlsx file in a directory.
-2) In the Windows Command Prompt, change the path to the location of Amat_Bvec.xlsx file. 
+2) In the Windows command prompt, change the path to the location of Amat_Bvec.xlsx file. 
 3) Run the following command: zacros_ce_fit Amat_Bvec.xlsx --correlation --histograms --stats 
 4) Alternatively, you can run the following command: python -m zacros_ce_fit.cli Amat_Bvec.xlsx --correlation --histograms --stats 
 
@@ -54,11 +54,17 @@ Running the utility creates the following folders in the the directory where you
 2) frequency_distributions: It contains histogram images for each numeric column.
 3) statistical_summary: It provides statistical information about each of the CE figure/parameter. 
 
+The following message will appear in the Windows command prompt after the folders are created: 
+```bash
+Analysis complete. Results saved in subfolders of: path\ZACROS_CE_File
+```
+
 ### Contributing
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
