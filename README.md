@@ -28,7 +28,7 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 - **[Scipy](https://scipy.org/)**
 
 ### Installation
-Use the Windows Command Prompt to clone the repository into your local machine and install Zacros_CE_fit utility using pip
+As shown below, use the Windows Command Prompt to clone the repository into your local machine, and install Zacros_CE_fit utility using pip
 ```bash
 git clone https://github.com/sharath291994/Zacros_CE_fit.git
 cd Zacros_CE_fit
@@ -59,6 +59,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
