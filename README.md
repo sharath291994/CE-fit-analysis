@@ -25,13 +25,8 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 - Python >= 3.8
 - pip
 
-### Installation procedure
-Clone the repository and install:
-git clone https://github.com/sharath291994/Zacros_CE_fit.git
-pip install .
+### Installation
 
-### Install via pip locally
-pip install pandas numpy matplotlib seaborn openpyxl scipy
 
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
@@ -57,6 +52,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
