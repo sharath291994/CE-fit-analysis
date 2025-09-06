@@ -1,7 +1,7 @@
 
 ## Overview
 
-**Zacros CE Fit** is a utility for performing **statistical analysis** on AmatBvec file obtained using cluster expansion fitting exercise. The following statisitcal information can be obtained using the utility: 
+**Zacros CE Fit** is a utility for performing **statistical analysis** on AmatBvec file obtained using cluster expansion fitting exercise. The following statistical information can be obtained using the utility: 
 
 - **Correlation Analysis:** Computes Pearson, Kendall, and Spearman correlation matrices with heatmaps.  
 - **Frequency Distributions:** Plots histograms of numeric data for quick exploratory analysis.  
@@ -57,6 +57,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
