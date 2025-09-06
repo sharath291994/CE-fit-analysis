@@ -33,6 +33,15 @@ Please follow the steps below to install the Zacros CE utility on your Windows m
 2) In the Windows Command Prompt, change the path to the location of the source code (where pyproject.toml file is available).
 3) Run the following command: pip install . 
 
+
+### Installing from Source
+
+To install the latest development version from GitHub:
+```bash
+git clone .git
+pip install .
+
+```
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
 1) Place your Amat_Bvec.xlsx file in a directory.
@@ -57,6 +66,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
