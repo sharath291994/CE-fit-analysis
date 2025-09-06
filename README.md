@@ -36,8 +36,8 @@ Please follow the steps below to install the Zacros CE utility in your Windows m
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
 1) Place your AmatBvec.xlsx file in a directory.
-2) In the Windows Command Prompt, change the path to the location of AmatBvec.xlsx file. 
-3) Run the following command: zacros_ce_fit AmatBvec.xlsx --correlation --histograms --stats 
+2) In the Windows Command Prompt, change the path to the location of Amat_Bvec.xlsx file. 
+3) Run the following command: zacros_ce_fit Amat_Bvec.xlsx --correlation --histograms --stats 
 4) Alternatively, you can run the following command: python -m zacros_ce_fit.cli AmatBvec.xlsx --correlation --histograms --stats 
 
 ### Options
@@ -48,15 +48,16 @@ The following options are available in the utility:
 
 ### Output
 Running the utility creates the following folders in the the directory where your AmatBvec.xlsx file is stored:
-1) correlation_matrices: It contains Excel files and heatmap images of correlation matrices.
+1) correlation_matrices: It contains heatmap images of correlation matrices and Excel files. 
 2) frequency_distributions: It contains histogram images for each numeric column.
-3) statistical_summary: It contains descriptive statistics.
+3) statistical_summary: It provides statistical information about each of the CE figure/parameter. 
 
 ### Contributing
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
