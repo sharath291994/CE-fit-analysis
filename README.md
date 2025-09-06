@@ -35,12 +35,11 @@ Please follow the steps below to install the Zacros CE utility on your Windows m
 
 
 ### Installing from Source
-
 To install the latest development version from GitHub:
 ```bash
 git clone .git
+cd 
 pip install .
-
 ```
 ### Usage
 Please follow the steps below to generate the results using the Zacros CE utility: 
@@ -66,6 +65,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
