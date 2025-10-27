@@ -4,11 +4,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import sklearn
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score, mean_squared_error
 
 # ===============================
 # Load and clean data
 # ===============================
-def load_data(file_path, drop_first=True, drop_last=True):
+def load_data(file_path, drop_first=True, drop_last=False):
     df = pd.read_excel(file_path)
     if drop_first and drop_last:
         df = df.iloc[:, 1:-1]
@@ -107,11 +110,84 @@ def statistical_summary(df, output_dir):
     
     return summary_stats
 
+# ====================================================
+# CE fit - Least squares regression technique
+# ====================================================
+
+def CE_fit(df, output_dir):
+    """
+    Fits the last row (as target) with all other rows (as features)
+    using a Linear Regression model.
+    
+    Parameters:
+        df (pd.DataFrame): Input dataframe
+        output_dir (str): Directory to save regression results
+        
+    Returns:
+        dict: Model coefficients, intercept, R² score, and predictions
+    """
+    # Transpose so rows become samples and columns become features
+    df_T = df.T
+
+    # Features: all rows except the last
+    X = df_T.iloc[:-1, :].values
+
+    # Target: last row
+    y = df_T.iloc[-1, :].values
+
+    # Fit linear regression
+    model = LinearRegression()
+    model.fit(X, y)
+
+    # Predictions
+    y_pred = model.predict(X)
+
+    # Compute metrics
+    r2 = r2_score(y, y_pred)
+    mse = mean_squared_error(y, y_pred)
+
+    # Store results
+    results = {
+        "coefficients": model.coef_,
+        "intercept": model.intercept_,
+        "r2_score": r2,
+        "mse": mse,
+        "predictions": y_pred
+    }
+
+    # Save coefficients and metrics to Excel
+    coef_df = pd.DataFrame({
+        "Feature": df.columns,
+        "Coefficient": model.coef_
+    })
+    coef_df.loc[len(coef_df)] = ["Intercept", model.intercept_]
+
+    coef_df["R2_Score"] = r2
+    coef_df["MSE"] = mse
+
+    output_file = os.path.join(output_dir, "CE_fit_results.xlsx")
+    coef_df.to_excel(output_file, index=False)
+
+    # Optional: Plot predictions vs actual
+    plt.figure(figsize=(8, 5))
+    plt.plot(y, label="Actual", marker="o")
+    plt.plot(y_pred, label="Predicted", marker="x")
+    plt.title("CE Fit: Actual vs Predicted")
+    plt.xlabel("Sample Index")
+    plt.ylabel("Target Value")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, "CE_fit_plot.png"))
+    plt.close()
+
+    return results
+
 # ===============================
 # Main utility function
 # ===============================
 def run_analysis(file_path, n_cols=None, corr_methods=["pearson", "kendall", "spearman"],
-                 do_correlation=True, do_frequency=True, do_stats=True):
+                 do_correlation=True, do_frequency=False, do_stats=True, do_ce_fit=True):
     
     base_dir = os.path.dirname(os.path.abspath(file_path))
     corr_dir, freq_dir, stats_dir = create_output_dirs(base_dir)
@@ -126,7 +202,11 @@ def run_analysis(file_path, n_cols=None, corr_methods=["pearson", "kendall", "sp
     
     if do_stats:
         statistical_summary(df, stats_dir)
-    
+        
+    if do_ce_fit:
+     CE_fit(df, base_dir)
+                     
     print("Analysis complete. Results saved in subfolders of:", base_dir)
+
 
 

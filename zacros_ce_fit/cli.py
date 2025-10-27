@@ -7,6 +7,7 @@ def main():
     parser.add_argument("--correlation", action="store_true", help="Generate correlation matrices")
     parser.add_argument("--histograms", action="store_true", help="Generate frequency distributions")
     parser.add_argument("--stats", action="store_true", help="Generate statistical summary")
+    parser.add_argument("--cefit", action="store_true", help="Run CE Fit (Linear Regression)")
     parser.add_argument("--ncols", type=int, default=None, help="Number of first n columns to include in correlation analysis")
     args = parser.parse_args()
 
