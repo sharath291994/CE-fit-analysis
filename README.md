@@ -25,7 +25,7 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 ![Histogram Example](examples/CE_fit_plot.png)
 
 ### Prerequisites
-- Python >= 3.8
+- Python >= 3.1
 - pip
 - **[Pandas](https://pandas.pydata.org/)**
 - **[Scipy](https://scipy.org/)**
@@ -70,6 +70,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 ### License
 This project is licensed under the MIT License.
+
 
 
 
