@@ -21,7 +21,6 @@ def load_data(file_path):
 # ===============================
 def create_output_dirs(base_path):
     corr_dir = os.path.join(base_path, "correlation_matrices")
-    freq_dir = os.path.join(base_path, "frequency_distributions")
     CE_fit_dir = os.path.join(base_path, "CE_fit")
     
     os.makedirs(corr_dir, exist_ok=True)
@@ -54,21 +53,6 @@ def correlation_analysis(df, output_dir, methods=["pearson", "kendall", "spearma
         plt.savefig(os.path.join(output_dir, f"correlation_{method}.png"))
         plt.close()
     return results
-
-# ===============================
-# Frequency Distributions
-# ===============================
-def frequency_distributions(df, output_dir):
-    df = df.iloc[:, 1:-1]
-    numeric_cols = df.select_dtypes(include=np.number).columns
-    for col in numeric_cols:
-        plt.figure(figsize=(8, 5))
-        sns.histplot(df[col], bins=20, kde=True, color="blue")
-        plt.title(f"Frequency Distribution of {col}")
-        plt.xlabel(col)
-        plt.ylabel("Frequency")
-        plt.savefig(os.path.join(output_dir, f"{col}_frequency.png"))
-        plt.close()
 
 # ====================================================
 # CE fit - Least squares regression technique
@@ -144,14 +128,8 @@ def run_analysis(file_path, n_cols=None, corr_methods=["pearson", "kendall", "sp
     
     if do_correlation:
         correlation_analysis(df, corr_dir, methods=corr_methods, n_cols=n_cols)
-    
-    if do_frequency:
-        frequency_distributions(df, freq_dir)
-          
+              
     if do_ce_fit:
      CE_fit(df, CE_fit_dir)
                      
     print("Analysis complete. Results saved in subfolders of:", base_dir)
-
-
-
