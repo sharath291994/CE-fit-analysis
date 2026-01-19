@@ -153,5 +153,5 @@ def run_analysis(file_path, n_cols=None, corr_methods=["pearson", "kendall", "sp
                      
     print("Analysis complete. Results saved in subfolders of:", base_dir)
 
-
+print("Module loaded successfully.")
 

@@ -69,7 +69,7 @@ Analysis complete. Results saved in subfolders of: path\ZACROS_CE_File
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
 ### License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. The following is the Readme detail
 
 
 
