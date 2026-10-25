@@ -88,8 +88,7 @@ def CE_fit(df, output_dir):
     """
     
     # Transpose so rows become samples and columns become features
-    df = pd.read_excel('Amat_Bvec.xlsx')
-
+    
     df = df.iloc[:, 1:]
  
     # Features: all columns except the last one
