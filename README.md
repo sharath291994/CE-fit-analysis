@@ -34,7 +34,7 @@ Kindly note that this is a beta version. The utility is undergoing further tests
 ### Installation
 As shown below, use the Windows Command Prompt (cmd.exe) to clone the repository into a directory in your local machine, and install Zacros_CE_fit utility using pip.
 ```bash
-git clone https://github.com/sharath291994/CE_fit.git
+git clone [https://github.com/sharath291994/CE_fit.git](https://github.com/sharath291994/CE-fit-analysis.git)
 cd CE_fit
 pip install .
 ```
